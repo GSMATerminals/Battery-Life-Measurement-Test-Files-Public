@@ -1,0 +1,2 @@
+# Battery-Life-Measurement-Test-Files
+TS.09 describes a selection of basic measurements that are representative of the main uses of mobile equipment (MS/UE) with a view that the resulting figures can provide a measure of battery performance or current consumption or current consumption whilst being exercised by a specific technology within a specified parameter set. This GitHub repository is for the storage of the test files used in TS.09. A copy of TS.09 can be obtained from the GSMA website here:- http://www.gsma.com/newsroom/gsmadocuments/
