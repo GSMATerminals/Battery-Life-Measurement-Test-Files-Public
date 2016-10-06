@@ -16,8 +16,8 @@ function H264_encode () {
 			extraOptions="-movflags +faststart -g $((raw_fps)) -keyint_min $((raw_fps*2)) -x264opts \"keyint=$((raw_fps*2)):min-keyint=$((raw_fps)):no-scenecut\""
 			;;
 		* )
-			echo "    + No supplementary options set (No DASH)"
-			extraOptions=""
+			echo "    + Only faststart option is set (No DASH)"
+			extraOptions="-movflags +faststart"
 			;;
 	esac
 
