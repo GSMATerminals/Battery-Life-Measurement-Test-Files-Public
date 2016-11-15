@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Define style to put the video in full screen mode -->
+<style>
+    *
+    {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+    }
+    html, body, video
+    {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+    }
+    html, body
+    {
+	overflow: hidden;
+	background-color: #000000;
+    }
+</style>
+
+<html>
+    <head>
+        <title>GSMA BLM Dash Streaming</title>
+        <style>
+            video {
+				*
+				{
+				margin: 0;
+				padding: 0;
+				line-height: 0;
+				}
+				html, body, video
+				{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				z-index: 1;
+				}
+				html, body
+				{
+				overflow: hidden;
+				background-color: #000000;
+				}
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <video id="videoPlayer" controls></video>
+        </div>
+        <script src="dash.all.js"></script>
+        <script>
+            (function(){
+                var url = "./content/H264_720p/ToS_720p_29.97fps_H264_3000kbps_8bits_noHDR_dash-v1v0.mpd";
+                var player = dashjs.MediaPlayer().create();
+                player.initialize(document.querySelector("#videoPlayer"), url, true);
+            })();
+        </script>
+    </body>
+</html>
